@@ -1,0 +1,15 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "GooBar2K",
+  "outputfilename": "GooBar2K",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "wailsjsdir": "./frontend/src/lib",
+  "assetdir": "frontend/build",
+  "author": {
+    "name": "V",
+    "email": "61495413+kelo221@users.noreply.github.com"
+  }
+}
