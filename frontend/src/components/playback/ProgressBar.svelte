@@ -1,5 +1,5 @@
 <script lang="ts">
-  let progress = 40;
+  let progress: ProgressBarState['progress'] = 40;
 </script>
 
 <div class="w-full px-2">

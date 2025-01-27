@@ -1,13 +1,5 @@
 <script lang="ts">
-    type BottomStatsProps = {
-        codec: string;
-        bitrate: string;
-        frequency: string;
-        channelType: string;
-        playtime: string;
-    };
-    
-    export let currentBottomStats: BottomStatsProps;
+    export let currentBottomStats: BottomStats;
 </script>
 
 <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-1">
