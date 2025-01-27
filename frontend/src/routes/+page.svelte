@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ProgressBar from "../components/playback/ProgressBar.svelte";
 	import BottomStats from "../components/ui/BottomStats.svelte";
 	import PlaylistTabs from "../components/ui/PlaylistTabs.svelte";
 
@@ -31,5 +32,14 @@
   }
 
   </script>
-  <PlaylistTabs tabs={myTabs} />
-  <BottomStats currentBottomStats={currentBottomStats} />
+
+<div class="flex flex-col min-h-screen">
+    <div class="flex-grow">
+        <PlaylistTabs tabs={myTabs} />
+    </div>
+    <div class="mb-8">
+        <ProgressBar />
+    </div>
+    <BottomStats currentBottomStats={currentBottomStats} />
+</div>
+

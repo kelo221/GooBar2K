@@ -1,26 +1,23 @@
-<h1 align="center">wails-template-shadcn-svelte</h1>
-<p align="center">Wails template which includes: Shadcn, Svelte/kit out of the box</p>
+# README
 
-## Preview
+## About
 
-<div style="display: flex; justify-content: space-between;">
-  <img src="./ui-1.jpg" width="49%" alt="preview">
-  <img src="./ui-2.jpg" width="49%" alt="preview">
-</div>
+Svelte + Tailwind Template for Wails
+Frontend updated to the latest packages and app versions for modern app development.
 
-## Use this template
+- @sveltejs/vite-plugin-svelte@2.4.5
+- autoprefixer@10.4.15
+- postcss@8.4.28
+- svelte@4.2.0
+- tailwindcss@3.3.3
+- vite@4.4
 
-```bash
-wails init -n my-wails-app -t https://github.com/xijaja/wails-template-shadcn-svelte
-```
+## Live Development
+
+To run in live development mode, run `wails dev` in the project directory. In another terminal, go into the `frontend`
+directory and run `npm run dev`. The frontend dev server will run on http://localhost:34115. Connect to this in your
+browser and connect to your application.
 
 ## Building
 
 To build a redistributable, production mode package, use `wails build`.
-
-## Other templates
-
-- [wails-template-vite-solid-ts](https://github.com/xijaja/wails-template-solid-ts) - A template using Solid + Ts + Vite
-- [wails-template-vite-solid-js](https://github.com/xijaja/wails-template-solid-js) - A template using Solid + Js + Vite
-- [wails-template-solid-tailwindcss](https://github.com/xijaja/wails-template-solid-tailwindcss) - A wails template with a beautiful sidebar, using solid and tailwindcss
-- [wails-template-vue3](https://github.com/xijaja/wails-template-vue3) - A wails template with a beautiful sidebar, using vue and tailwindcss
