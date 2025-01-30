@@ -1,8 +1,12 @@
 <script lang="ts">
-  let { tabs, onCreateTab, onRemoveTab } = $props<{
+  import Playlist from "../playlist/Playlist.svelte";
+
+  let { tabs, onCreateTab, onRemoveTab, onRenameTab } = $props<{
     tabs: Tab[],
     onCreateTab: () => void,
-    onRemoveTab: (id: string) => void
+    onRemoveTab: (id: string) => void,
+    onRenameTab: (id: string, newName: string) => void,
+    onReorderTab: (id: string, newIndex: number) => void
   }>();
   let activeTab = $state(0);
 
@@ -25,14 +29,13 @@
       aria-label={tab.label}
       checked={i === activeTab}
       onmousedown={(e) => handleMouseDown(e, tab)}
+      ondblclick={() => onRenameTab(tab.id, prompt('Enter new name:') || tab.label)}
     />
-    <div 
+    <div
       role="tabpanel"
-      class="tab-content bg-base-100 border-base-300 p-6"
-      
+      class="tab-content"
     >
-      <h3>{tab.content.title}</h3>
-      <p>{tab.content.text}</p>
+      <Playlist/>
     </div>
   {/each}
   <div class="tab" onclick={onCreateTab}>

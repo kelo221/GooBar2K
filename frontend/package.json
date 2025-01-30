@@ -1,13 +1,7 @@
 {
   "name": "GooBar2K",
   "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
-  },
+  "author": "V",
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.5.3",
     "@tsconfig/svelte": "^5.0.4",
@@ -21,5 +15,11 @@
     "typescript": "^5.7.3",
     "vite": "^4.5.9"
   },
-  "author": "V"
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "type": "module"
 }

@@ -38,6 +38,10 @@
     myTabs = myTabs.filter(tab => tab.id !== id);
   }
 
+  function renameTab(id: string, newName: string) {
+    myTabs = myTabs.map(tab => tab.id === id ? { ...tab, label: newName } : tab);
+  }
+
   const currentBottomStats = {
     codec: 'WavPack',
     bitrate: '998 kbps',
@@ -52,5 +56,6 @@
   tabs={myTabs} 
   onCreateTab={createTab}
   onRemoveTab={removeTab}
+  onRenameTab={renameTab}
 />
 <BottomStats currentBottomStats={currentBottomStats} />
