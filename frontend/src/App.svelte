@@ -3,6 +3,7 @@
   import ProgressBar from "./components/playback/ProgressBar.svelte";
   import PlaylistTabs from "./components/ui/PlaylistTabs.svelte";
   import BottomStats from "./components/ui/BottomStats.svelte";
+  import PlayBackButtons from "./components/playback/PlayBackButtons.svelte";
 
   let myTabs : Tab[] = $state([
     {
@@ -51,6 +52,9 @@
   }
 
 </script>
+
+<PlayBackButtons/>
+
 <ProgressBar/>
 <PlaylistTabs 
   tabs={myTabs} 
