@@ -8,7 +8,6 @@
     onRenameTab: (id: string, newName: string) => void,
     onReorderTab: (id: string, newIndex: number) => void
   }>();
-  let activeTab = $state(0);
 
   function handleMouseDown(event: MouseEvent, tab: Tab) {
     // Middle mouse button (button 1)
@@ -16,6 +15,14 @@
       event.preventDefault();
       onRemoveTab(tab.id);
     }
+  }
+
+  let activeTab = $state(0);
+  let tabContainer: HTMLDivElement;
+
+  // Add this function
+  function setActiveTab(index: number) {
+    activeTab = index;
   }
 </script>
 
@@ -25,18 +32,13 @@
       type="radio" 
       name="my_tabs_3" 
       role="tab" 
-      class="tab" 
+      class="tab truncate min-w-[100px] max-w-[200px]" 
       aria-label={tab.label}
       checked={i === activeTab}
+      onchange={() => activeTab = i}
       onmousedown={(e) => handleMouseDown(e, tab)}
       ondblclick={() => onRenameTab(tab.id, prompt('Enter new name:') || tab.label)}
     />
-    <div
-      role="tabpanel"
-      class="tab-content"
-    >
-      <Playlist/>
-    </div>
   {/each}
   <div class="tab" onclick={onCreateTab}>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
@@ -44,3 +46,32 @@
     </svg>
   </div>
 </div>
+
+<div class="tab-content-container">
+  {#each tabs as tab, i}
+    <div
+      role="tabpanel"
+      class="tab-content"
+      class:active={i === activeTab}
+    >
+      <Playlist/>
+    </div>
+  {/each}
+</div>
+
+<style>
+  .tab-content-container {
+    flex: 1;
+    min-height: 0;
+    position: relative;
+  }
+
+  .tab-content {
+    display: none;
+    height: 100%;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+</style>

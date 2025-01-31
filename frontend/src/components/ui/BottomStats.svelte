@@ -8,11 +8,11 @@
 
 <style>
   .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    border-top: 1px solid var(--border-color); /* Optional separator */
   }
-
-</style>
+  </style>
+  

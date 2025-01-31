@@ -1,6 +1,6 @@
-﻿<div class="overflow-x-auto">
+﻿<div class="playlist-container">
     <table class="table table-zebra">
-        <thead>
+        <thead class="sticky-header">
         <tr>
             <th>Artist / Album</th>
             <th>Track </th>
@@ -21,22 +21,130 @@
             <td>Hart Hagerty</td>
             <td>Desktop Support Technician</td>
             <td>Purple</td>
-            <td>1:58</td>
+            <td>-</td>
         </tr>
         <!-- row 3 -->
         <tr>
-            <td>Brice Swyre</td>
-            <td>Tax Accountant</td>
-            <td>Red</td>
-            <td>1:58</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
 
         <tr>
-            <td>Brice Swyre</td>
-            <td>Tax Accountant</td>
-            <td>Red</td>
-            <td>1:58</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         </tbody>
     </table>
 </div>
+
+<style>
+    .playlist-container {
+      height: 100%;
+      overflow-y: auto;
+      position: relative;
+    }
+  
+    /* Ensure table header stays sticky */
+    .sticky-header th {
+      position: sticky;
+      top: 0;
+      background: var(--bg-color);
+      z-index: 20;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
