@@ -17,7 +17,7 @@
           {:else if sortDirection === 'desc'}
             ↓
           {:else}
-            ⇅
+          ‎ 
           {/if}
         </div>
       {/if}
