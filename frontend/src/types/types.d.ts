@@ -20,3 +20,18 @@ type BottomStats = {
 type ProgressBarState = {
     progress: number;
 };
+
+type Playlist = {
+    id: string;
+    name: string;
+    songs: AudioFile[];
+}
+
+type AudioFile = {
+    id: string
+    track: number;
+    title: string;
+    artist: string;
+    album: string;
+    duration: string;
+}
