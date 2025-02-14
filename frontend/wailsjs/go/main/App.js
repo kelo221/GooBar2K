@@ -5,3 +5,39 @@
 export function Greet(arg1) {
   return window['go']['main']['App']['Greet'](arg1);
 }
+
+export function LoadFileRequest(arg1) {
+  return window['go']['main']['App']['LoadFileRequest'](arg1);
+}
+
+export function PauseRequest() {
+  return window['go']['main']['App']['PauseRequest']();
+}
+
+export function PlayNextReques() {
+  return window['go']['main']['App']['PlayNextReques']();
+}
+
+export function PlayPreviousReques() {
+  return window['go']['main']['App']['PlayPreviousReques']();
+}
+
+export function PlayRandomReques() {
+  return window['go']['main']['App']['PlayRandomReques']();
+}
+
+export function PlayRequest() {
+  return window['go']['main']['App']['PlayRequest']();
+}
+
+export function SeekToReques(arg1) {
+  return window['go']['main']['App']['SeekToReques'](arg1);
+}
+
+export function SetVolumeReques(arg1) {
+  return window['go']['main']['App']['SetVolumeReques'](arg1);
+}
+
+export function StopRequest() {
+  return window['go']['main']['App']['StopRequest']();
+}

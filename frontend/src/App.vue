@@ -41,7 +41,24 @@ import BottomStats from "@/components/ui/BottomStats.vue";
 }
 </style>
 
-<!--<template vapor>-->
+<!--<script lang="ts" setup>-->
+<!--import {reactive} from 'vue'-->
+<!--import {Greet} from '../wailsjs/go/main/App'-->
+
+<!--const data = reactive({-->
+<!--  name: "",-->
+<!--  resultText: "Please enter your name below 👇",-->
+<!--})-->
+
+<!--function greet() {-->
+<!--  Greet(data.name).then((result: string) => {-->
+<!--    data.resultText = result-->
+<!--  })-->
+<!--}-->
+
+<!--</script>-->
+
+<!--<template>-->
 <!--  <main>-->
 <!--    <div class="flex justify-center items-center">-->
 <!--      <div class="card">-->
@@ -54,8 +71,3 @@ import BottomStats from "@/components/ui/BottomStats.vue";
 <!--    </div>-->
 <!--  </main>-->
 <!--</template>-->
-
-// import {Greet} from '../wailsjs/go/main/App' // // const data = reactive({ //
-name: "", // resultText: "Please enter your name below 👇", // }) // // function
-greet() { // Greet(data.name).then((result: string) => { // data.resultText =
-result // }) // }
